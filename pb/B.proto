@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package apiB;
+
+option go_package = ".;apiB";
+
+message Sha256Request {
+  string shaReq = 1;
+  int32 num = 2;
+}
+
+message Sha256Reply {
+  string shaResp = 1;
+}
+
+service B {
+  rpc ComputeSha256 (Sha256Request) returns (Sha256Reply) {}
+}
+

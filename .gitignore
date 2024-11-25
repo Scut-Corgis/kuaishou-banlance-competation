@@ -1,0 +1,11 @@
+
+**/*.log
+
+
+A/output
+B/output
+A/bin/A
+B/bin/B
+
+A/logs
+B/logs
